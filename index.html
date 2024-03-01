@@ -16,49 +16,13 @@
             <button onclick="timeButtonPressed(4)">3M</button>
         </div>
         <div class="currency">
-            <p>Rate: <span id="daily-rate" name="daily-rate">4.356</span></p>
+            <p>Rate: <span id="daily-rate" name="daily-rate"></span></p>
         </div>
         <div class="currency-chart">
             <canvas id="myChart" width="800" height="200"></canvas>
         </div>
         <div class="currencies">
             <select onchange="loadCurrencies()" id="currency" name="currency">
-                <option value="thd">THD (bat (Tajlandia))</option>
-                <option selected value="usd">USD (dolar amerykański)</option>
-                <option value="aud">AUD (dolar australijski)</option>
-                <option value="hkd">HKD (dolar Hongkongu)</option>
-                <option value="cad">CAD (dolar kanadyjski)</option>
-                <option value="nzd">NZD (dolar nowozelandzki)</option>
-                <option value="sgd">SGD (dolar singapurski)</option>
-                <option value="eur">EUR (euro)</option>
-                <option value="huf">HUF (forint (Węgry))</option>
-                <option value="chf">CHF (frank szwajcarski)</option>
-                <option value="gbp">GBP (funt szterling)</option>
-                <option value="uah">UAH (hrywna (Ukraina))</option>
-                <option value="jpy">JPY (jen (Japonia))</option>
-                <option value="czk">CZK (korona czeska)</option>
-                <option value="dkk">DKK (korona duńska)</option>
-                <option value="isk">ISK (korona islandzka)</option>
-                <option value="nok">NOK (korona norweska)</option>
-                <option value="sek">SEK (korona szwedzka)</option>
-                <option value="ron">RON (lej rumuński)</option>
-                <option value="bgn">BGN (lew (Bułgaria))</option>
-                <option value="try">TRY (lira turecka)</option>
-                <option value="ils">ILS (nowy izraelski szekel)</option>
-                <option value="clp">CLP (peso chilijskie)</option>
-                <option value="php">PHP (peso filipińskie)</option>
-                <option value="mxn">MXN (peso meksykańskie)</option>
-                <option value="pln">PLN (polski złoty)</option>
-                <option value="zar">ZAR (rand (Republika Południowej Afryki))</option>
-                <option value="brl">BRL (real (Brazylia))</option>
-                <option value="myr">MYR (ringgit (Malezja))</option>
-                <option value="idr">IDR (rupia indonezyjska)</option>
-                <option value="inr">INR (rupia indyjska)</option>
-                <option value="krw">KRW (won południowokoreański)</option>
-                <option value="cny">CNY (yuan renminbi (Chiny))</option>
-            </select>
-            <select onchange="loadCurrencies()" id="conversion" name="conversion">
-                <option value="thd">THD (bat (Tajlandia))</option>
                 <option value="usd">USD (dolar amerykański)</option>
                 <option value="aud">AUD (dolar australijski)</option>
                 <option value="hkd">HKD (dolar Hongkongu)</option>
@@ -83,7 +47,39 @@
                 <option value="clp">CLP (peso chilijskie)</option>
                 <option value="php">PHP (peso filipińskie)</option>
                 <option value="mxn">MXN (peso meksykańskie)</option>
-                <option value="pln">PLN (polski złoty)</option>
+                <option value="zar">ZAR (rand (Republika Południowej Afryki))</option>
+                <option value="brl">BRL (real (Brazylia))</option>
+                <option value="myr">MYR (ringgit (Malezja))</option>
+                <option value="idr">IDR (rupia indonezyjska)</option>
+                <option value="inr">INR (rupia indyjska)</option>
+                <option value="krw">KRW (won południowokoreański)</option>
+                <option value="cny">CNY (yuan renminbi (Chiny))</option>
+            </select>
+            <select onchange="loadCurrencies()" id="conversion" name="conversion">
+                <option selected value="usd">USD (dolar amerykański)</option>
+                <option value="aud">AUD (dolar australijski)</option>
+                <option value="hkd">HKD (dolar Hongkongu)</option>
+                <option value="cad">CAD (dolar kanadyjski)</option>
+                <option value="nzd">NZD (dolar nowozelandzki)</option>
+                <option value="sgd">SGD (dolar singapurski)</option>
+                <option value="eur">EUR (euro)</option>
+                <option value="huf">HUF (forint (Węgry))</option>
+                <option value="chf">CHF (frank szwajcarski)</option>
+                <option value="gbp">GBP (funt szterling)</option>
+                <option value="uah">UAH (hrywna (Ukraina))</option>
+                <option value="jpy">JPY (jen (Japonia))</option>
+                <option value="czk">CZK (korona czeska)</option>
+                <option value="dkk">DKK (korona duńska)</option>
+                <option value="isk">ISK (korona islandzka)</option>
+                <option value="nok">NOK (korona norweska)</option>
+                <option value="sek">SEK (korona szwedzka)</option>
+                <option value="ron">RON (lej rumuński)</option>
+                <option value="bgn">BGN (lew (Bułgaria))</option>
+                <option value="try">TRY (lira turecka)</option>
+                <option value="ils">ILS (nowy izraelski szekel)</option>
+                <option value="clp">CLP (peso chilijskie)</option>
+                <option value="php">PHP (peso filipińskie)</option>
+                <option value="mxn">MXN (peso meksykańskie)</option>
                 <option value="zar">ZAR (rand (Republika Południowej Afryki))</option>
                 <option value="brl">BRL (real (Brazylia))</option>
                 <option value="myr">MYR (ringgit (Malezja))</option>

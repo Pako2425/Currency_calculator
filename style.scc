@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(220,220,220);
+}
+
+button {
+    width: 50px;
+    height: 24px;
+}
+
+select {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    
+}

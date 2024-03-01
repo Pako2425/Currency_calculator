@@ -32,12 +32,7 @@ async function loadCurrencies() {
 }
 
 async function loadCurrency(currencyCode) {
-    //if(currencyCode == "pln") {
-    //    midRate = 1.0;
-    //    return midRate;
-    //}
     let url = createNbpApiRequestUrlForCurrencyValue(currencyCode);
-    console.log(url);
     let midRateTab = [];
     try {
         let response = await fetch(url);
