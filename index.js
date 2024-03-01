@@ -54,7 +54,7 @@ async function loadCurrency(currencyCode) {
 }
 
 function createNbpApiRequestUrlForCurrencyValue(currencyCode) {
-    let requestUrl = 'http://api.nbp.pl/api/exchangerates/rates/a/' + currencyCode;
+    let requestUrl = 'https://api.nbp.pl/api/exchangerates/rates/a/' + currencyCode;
     let startDate = new Date(currentDate);
     if(timeInterval == 1) {
         return requestUrl;
