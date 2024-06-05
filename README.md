@@ -1,13 +1,14 @@
 # Currency calculator
 ## Description
-[calculator](https://pako2425.github.io/currency-calculator) <br/>
+[calculator](https://pako2425.github.io/currency-calculator)
+
 Simple currency rate calculator. It uses NBP Web Api to download daily exchange rates from a given period of time (up to three months).
 <br/>
 
 # Tech stack
-### HTML
-### CSS
-### Javascript
+HTML <br/>
+CSS <br/>
+Javascript <br/>
 <br/>
 
 # Screen shots
